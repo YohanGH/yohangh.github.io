@@ -48,105 +48,102 @@ function collapse(d) {
 }
 
 function update(source) {
-	// Assignation des ID aux nœuds et inversion de l'arbre
-	const nodes = tree.nodes(root).reverse(),
-		links = tree.links(nodes);
+    // Assignation des ID aux nœuds et inversion de l'arbre
+    const nodes = tree.nodes(root).reverse(),
+          links = tree.links(nodes);
 
-	nodes.forEach((d) => (d.y = d.depth * 180));
+    nodes.forEach((d) => (d.y = d.depth * 180));
 
-	// Mise à jour des nœuds
-	const node = svg
-		.selectAll("g.node")
-		.data(nodes, (d) => d.id || (d.id = ++i));
+    // Mise à jour des nœuds
+    const node = svg.selectAll("g.node")
+                    .data(nodes, (d) => d.id || (d.id = ++i));
 
-	// Entrée de nouveaux nœuds
-	const nodeEnter = node
-		.enter()
-		.append("g")
-		.attr("class", "node")
-		.attr(
-			"transform",
-			(d) => "translate(" + source.y0 + "," + source.x0 + ")"
-		)
-		.on("click", (d) => {
-			toggle(d);
-			update(d);
-		});
+    // Entrée de nouveaux nœuds
+    const nodeEnter = node.enter()
+                          .append("g")
+                          .attr("class", "node")
+                          .attr("transform", (d) => `translate(${source.y0},${source.x0})`)
+                          .on("click", (d) => {
+                              toggle(d);
+                              update(d);
+                          });
 
-	nodeEnter
-		.append("circle")
-		.attr("r", 1e-6)
-		.style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
+    nodeEnter.append("circle")
+             .attr("r", 1e-6)
+             .style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
 
-	nodeEnter
-		.append("text")
-		.attr("x", (d) => (d.children || d._children ? -10 : 10))
-		.attr("dy", ".35em")
-		.attr("text-anchor", (d) =>
-			d.children || d._children ? "end" : "start"
-		)
-		.text((d) => d.name)
-		.style("fill-opacity", 1e-6);
+    // Ajout des balises <a> pour les liens
+    const nodeLink = nodeEnter.append("a")
+                              .attr("xlink:href", (d) => d.url)
+                              .attr("target", "_blank");
 
-	// Transition pour les nœuds entrants
-	const nodeUpdate = node
-		.transition()
-		.duration(duration)
-		.attr("transform", (d) => "translate(" + d.y + "," + d.x + ")");
+    nodeLink.append("text")
+            .attr("x", (d) => (d.children || d._children ? -10 : 10))
+            .attr("dy", ".35em")
+            .attr("text-anchor", (d) => d.children || d._children ? "end" : "start")
+            .text((d) => d.name)
+            .style("fill-opacity", 1);
 
-	nodeUpdate
-		.select("circle")
-		.attr("r", 4.5)
-		.style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
+    // Transition pour les nœuds entrants
+    const nodeUpdate = node.transition()
+                           .duration(duration)
+                           .attr("transform", (d) => `translate(${d.y},${d.x})`);
 
-	nodeUpdate.select("text").style("fill-opacity", 1);
+    nodeUpdate.select("circle")
+              .attr("r", 4.5)
+              .style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
 
-	// Transition pour les nœuds sortants vers la nouvelle position du parent
-	const nodeExit = node
-		.exit()
-		.transition()
-		.duration(duration)
-		.attr(
-			"transform",
-			(d) => "translate(" + source.y + "," + source.x + ")"
-		)
-		.remove();
+    nodeUpdate.select("text")
+              .style("fill-opacity", 1);
 
-	nodeExit.select("circle").attr("r", 1e-6);
+    // Transition pour les nœuds sortants vers la nouvelle position du parent
+    const nodeExit = node.exit().transition()
+                              .duration(duration)
+                              .attr("transform", (d) => `translate(${source.y},${source.x})`)
+                              .remove();
 
-	nodeExit.select("text").style("fill-opacity", 1e-6);
+    nodeExit.select("circle")
+            .attr("r", 1e-6);
 
-	// Mise à jour des liens
-	const link = svg.selectAll("path.link").data(links, (d) => d.target.id);
+    nodeExit.select("text")
+            .style("fill-opacity", 1e-6);
 
-	// Entrée de nouveaux liens
-	link.enter()
-		.insert("path", "g")
-		.attr("class", "link")
-		.attr("d", (d) => {
-			const o = { x: source.x0, y: source.y0 };
-			return diagonal({ source: o, target: o });
-		});
+    // Mise à jour des liens
+    const link = svg.selectAll("path.link")
+                    .data(links, (d) => d.target.id);
 
-	// Transition pour les liens entrants
-	link.transition().duration(duration).attr("d", diagonal);
+    // Entrée de nouveaux liens
+    link.enter().insert("path", "g")
+        .attr("class", "link")
+        .attr("d", (d) => {
+            const o = {x: source.x0, y: source.y0};
+            return diagonal({source: o, target: o});
+        })
+        .transition()
+        .duration(duration)
+        .attr("d", diagonal);
 
-	// Transition pour les liens sortants vers la nouvelle position du parent
-	link.exit()
-		.transition()
-		.duration(duration)
-		.attr("d", (d) => {
-			const o = { x: source.x, y: source.y };
-			return diagonal({ source: o, target: o });
-		})
-		.remove();
+    // Transition pour les liens entrants
+    link.transition()
+        .duration(duration)
+        .attr("d", diagonal);
 
-	// Sauvegarde des positions anciennes pour la transition
-	nodes.forEach((d) => {
-		d.x0 = d.x;
-		d.y0 = d.y;
-	});
+    // Transition pour les liens sortants vers la nouvelle position du parent
+    link.exit().transition()
+               .duration(duration)
+               .attr("d", (d) => {
+                   const o = {x: source.x, y: source.y};
+                   return diagonal({source: o, target: o});
+               })
+               .remove();
+
+    // Sauvegarde des positions anciennes pour la transition
+    nodes.forEach((d) => {
+        d.x0 = d.x;
+        d.y0 = d.y;
+    });
 }
+
 
 // Fonction pour basculer entre les enfants et les enfants cachés
 function toggle(d) {
