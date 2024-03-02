@@ -15,7 +15,7 @@ const diagonal = d3.svg.diagonal().projection((d) => [d.y, d.x]);
 
 // Ajout du SVG au body du document
 const svg = d3
-	.select("body")
+	.select("#tree-container")
 	.append("svg")
 	.attr("width", width + margin.left + margin.right)
 	.attr("height", height + margin.top + margin.bottom)
