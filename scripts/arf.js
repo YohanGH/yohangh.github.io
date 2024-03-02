@@ -1,7 +1,7 @@
 // Définition des dimensions et des marges du graphique
 const margin = { top: 20, right: 120, bottom: 20, left: 140 },
-	width = 1280 - margin.left - margin.right,
-	height = 800 - margin.top - margin.bottom;
+	width = 1200 - margin.left - margin.right,
+	height = 600 - margin.top - margin.bottom;
 
 let i = 0,
 	duration = 750,
@@ -17,8 +17,12 @@ const diagonal = d3.svg.diagonal().projection((d) => [d.y, d.x]);
 const svg = d3
 	.select("#tree-container")
 	.append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
+	.attr(
+		"viewBox",
+		`0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`
+	)
+	.attr("preserveAspectRatio", "xMinYMin meet")
+
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -64,7 +68,7 @@ function update(source) {
 		.enter()
 		.append("g")
 		.attr("class", "node")
-		.attr("transform", (d) => `translate(${source.y0},${source.x0})`)
+		.attr("transform", (d) => `translate(${source.y0 * 5.2},${source.x0})`)
 		.on("click", (d) => {
 			toggle(d);
 			update(d);
@@ -83,7 +87,7 @@ function update(source) {
 
 	nodeLink
 		.append("text")
-		.attr("x", (d) => (d.children || d._children ? -10 : 10))
+		.attr("x", (d) => (d.children || d._children ? -13 : 13))
 		.attr("dy", ".35em")
 		.attr("text-anchor", (d) =>
 			d.children || d._children ? "end" : "start"
@@ -99,7 +103,7 @@ function update(source) {
 
 	nodeUpdate
 		.select("circle")
-		.attr("r", 4.5)
+		.attr("r", 4,5)
 		.style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
 
 	nodeUpdate.select("text").style("fill-opacity", 1);
@@ -162,3 +166,4 @@ function toggle(d) {
 	}
 	update(d);
 }
+

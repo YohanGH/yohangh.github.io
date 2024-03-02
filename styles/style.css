@@ -1,95 +1,132 @@
 :root {
-  /* Couleurs */
-  --background-color: #0a0a0a;
-  --container-background-color: #121212;
-  --text-color-pink-neon: #39ff14;
-  --text-color-purple-neon: rgba(234, 87, 260, 1);
-  --title-color-green-neon: #ff4081;
-  --hover-color-yellow-neon: rgba(223, 252, 82, 1);
-  --border-color-yellow-neon: rgba(130, 102, 170, 1);
-  --border-color-red-neon: #FF1818;
-  --border-color: #39ff14;
-  --hover-color-pink-neon: #ff4081;
-  --shadow-color: #39ff14;
+	/* Couleurs */
+	--background-color: #0a0a0a;
+	--container-background-color: #121212;
+	--text-color-pink-neon: #39ff14;
+	--text-color-purple-neon: rgba(234, 87, 260, 1);
+	--title-color-green-neon: #ff4081;
+	--hover-color-yellow-neon: rgba(223, 252, 82, 1);
+	--border-color-yellow-neon: rgba(130, 102, 170, 1);
+	--border-color-red-neon: #ff1818;
+	--border-color: #39ff14;
+	--hover-color-pink-neon: #ff4081;
+	--shadow-color-purple-neon: rgba(234, 87, 260, 0.6);
+	--shadow-color: #39ff14;
 
-  /* Tailles de police */
-  --font-size-normal: 16px;
-  --font-size-title: 40px;
-  --font-size-legend: 12px;
-  --font-size-small: 10px; /* Ajout d'une taille de police plus petite */
-  --font-size-large: 24px; /* Ajout d'une taille de police plus grande */
+	/* Tailles de police */
+	--font-size-normal: 18px;
+	--font-size-title: 40px;
+	--font-size-legend: 12px;
+	--font-size-small: 10px;
+	--font-size-large: 24px;
+	--font-size-text: 12px;
 
-  /* Tailles de marges et de paddings */
-  --margin-standard: 20px;
-  --padding-standard: 20px;
-  --padding-small: 10px;
-  --padding-large: 30px;
+	/* Tailles de marges et de paddings */
+	--margin-standard: 20px;
+	--padding-standard: 20px;
+	--padding-small: 10px;
+	--padding-large: 30px;
 
-  /* Polices */
-  --font-family: "Courier New", Courier, monospace;
+	/* Polices */
+	--font-family: "Open Sans", Courier, monospace;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color-pink-neon);
-  font-size: var(--font-size-normal);
-  font-family: var(--font-family);
-}
+	background-color: var(--background-color);
+	color: var(--text-color-pink-neon);
+	font-size: var(--font-size-normal);
+	font-family: var(--font-family); }
 
 a {
 	color: var(--text-color-purple-neon);
 }
-
 svg {
-  margin: var(--margin-standard) auto;
-  padding: var(--padding-standard);
-  background-color: var(--container-background-color);
-  border: 1px solid var(--border-color);
+	display: block;
+	width: 95%;
+	height: auto;
+	margin: var(--margin-standard) auto;
+	padding: var(--padding-standard);
+	background-color: var(--container-background-color);
+	border: 1px solid var(--border-color);
 }
-
 #header {
-  font-size: var(--font-size-title);
-  font-weight: bold;
-  margin-top: var(--margin-standard);
-  text-align: center;
-  color: var(--title-color-green-neon);
+	font-size: var(--font-size-title);
+	font-weight: bold;
+	margin-top: var(--margin-standard);
+	text-align: center;
+	color: var(--title-color-green-neon);
 }
 
 .legend {
-  position: absolute;
-  width: 330px;
-  font-size: var(--font-size-legend);
-  color: var(--text-color-pink-neon);
-  background-color: var(--container-background-color);
-  border-left: 3px solid var(--title-color-green-neon);
-  padding: var(--padding-small);
-  box-shadow: 0 0 15px var(--shadow-color);
+	position: absolute;
+	width: 330px;
+	font-size: var(--font-size-legend);
+	color: var(--text-color-pink-neon);
+	background-color: var(--container-background-color);
+	border-left: 3px solid var(--title-color-green-neon);
+	padding: var(--padding-small);
+	box-shadow: 0 0 15px var(--shadow-color);
 }
 
 .node {
-  cursor: pointer;
+	cursor: pointer;
 }
 .node circle {
-  fill: #222;
-  stroke: var(--border-color-red-neon);
-  stroke-width: 0.1rem;
+	fill: #222;
+	stroke: var(--border-color-red-neon);
+	stroke-width: 0.1rem;
 }
 
 .node circle:hover {
-  fill: var(--hover-color-yellow-neon);
+	fill: var(--hover-color-yellow-neon);
 }
 
 .node text {
-  font-size: var(--font-size-normal);
-  fill: var(--text-color-pink-neon);
+	font-size: var(--font-size-text);
+	text-shadow: var(--shadow-color-purple-neon) 1px 0 10px;
+	fill: var(--text-color-pink-neon);
 }
-
 path.link {
-  fill: none;
-  stroke: var(--border-color-yellow-neon);
-  stroke-width: 1.5px;
+	fill: none;
+	stroke: var(--border-color-yellow-neon);
+	stroke-width: 1.5px;
 }
 
 footer {
 	text-align: center;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+	:root {
+		--font-size-normal: 16px;
+		--font-size-title: 32px;
+		--font-size-legend: 10px;
+		--margin-standard: 10px;
+		--padding-standard: 10px;
+	}
+
+	.legend {
+		width: auto;
+		padding: var(--padding-small);
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--font-size-normal: 14px;
+		--font-size-title: 24px;
+		--font-size-legend: 8px;
+		--padding-small: 5px;
+		--margin-standard: 5px;
+	}
+
+	#header {
+		font-size: var(--font-size-title);
+	}
+
+	.node text {
+		font-size: var(--font-size-small);
+	}
 }

@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         .--.    No           #
+#    README.md                                           |o_o |    Pain        #
+#                                                        |:_/ |     No         #
+#    By: YohanGH <YohanGH@proton.me>                    //    ''     Code      #
+#                                                      (|     | )              #
+#    Created: 2024/03/02 18:36:17 by YohanGH           '__   _/_               #
+#    Updated: 2024/03/02 18:36:19 by YohanGH          (___)=(___)              #
+#                                                                              #
+# **************************************************************************** #
+
 # Full Stack Development Resource
 
 ## Notes
@@ -33,6 +45,9 @@ For new resources, please ensure that the site is available for public and free 
 <ol start="2">
   <li>Submit your pull request with a brief description of the resource and why it's valuable for Full Stack development.</li>
 </ol>
+
+### Inspiration
+This project was inspired by the https://github.com/lockfale/osint-framework" OSINT Framework created by lockfale. It aims to provide a comprehensive set of resources for Full Stack development and DevOps practices.
 
 Thank you!
 

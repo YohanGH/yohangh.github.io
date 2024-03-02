@@ -2,272 +2,354 @@
 	"name": "Full Stack",
 	"children": [
 		{
-			"name": "Web Browsers",
+			"name": "Front End",
 			"children": [
 				{
-					"name": "Google Chrome",
-					"type": "url",
-					"url": "https://www.google.com/intl/en/chrome/"
+					"name": "Internet",
+					"children": []
 				},
 				{
-					"name": "Safari",
-					"type": "url",
-					"url": ""
+					"name": "Web Development",
+					"children": [
+						{
+							"name": "hébergeur",
+							"children": []
+						},
+						{
+							"name": "Site vitrine",
+							"children": []
+						},
+						{
+							"name": "HTML",
+							"children": [
+								{
+									"name": "Jeux html",
+									"children": []
+								}
+							]
+						},
+						{
+							"name": "CSS",
+							"children": [
+								{
+									"name": "jeux CSS",
+									"children": [
+										{
+											"name": "css garden",
+											"type": "url",
+											"url": "http://cssgarden.com"
+										},
+										{
+											"name": "flexbox froggy",
+											"type": "url",
+											"url": "http://flexboxfroggy.com"
+										},
+										{
+											"name": "css dinner",
+											"type": "url",
+											"url": "http://flukeout.github.io"
+										},
+										{
+											"name": "CSS Grid Attack",
+											"type": "url",
+											"url": "https://codingfantasy.com/games/css-grid-attack/play"
+										},
+										{
+											"name": "CSS Speedrun",
+											"type": "url",
+											"url": "https://cssspeedrun.com"
+										}
+									]
+								}
+							]
+						}
+					]
 				},
 				{
-					"name": "Mozilla Firefox",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Arc",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Waterfox",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Opera",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Vivaldi",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Microsoft Edge",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Sidekick",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Polypane",
-					"type": "url",
-					"url": ""
-				}
-			]
-		},
-		{
-			"name": "Mail",
-			"children": [
-				{
-					"name": "Polypane",
-					"type": "url",
-					"url": ""
-				}
-			]
-		},
-		{
-			"name": "AI",
-			"children": [
-				{
-					"name": "Drawing",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Music",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Video",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Text",
-					"type": "url",
-					"url": ""
-				}
-			]
-		},
-		{
-			"name": "Web Development Training",
-			"children": [
-				{
-					"name": "Schools",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Courses",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "Resources",
-					"type": "url",
-					"url": ""
-				}
-			]
-		},
-		{
-			"name": "Official Documentation",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Programming Languages",
-			"children": [
-				{
-					"name": "CSS",
-					"type": "url",
-					"url": ""
-				},
-				{
-					"name": "HTML",
-					"type": "url",
-					"url": ""
+					"name": "Design & Media",
+					"children": [
+						{
+							"name": "Illustration",
+							"children": []
+						},
+						{
+							"name": "icônes",
+							"children": []
+						},
+						{
+							"name": "images",
+							"children": []
+						},
+						{
+							"name": "infographie",
+							"children": []
+						},
+						{
+							"name": "voice",
+							"children": []
+						},
+						{
+							"name": "video",
+							"children": []
+						}
+					]
 				},
 				{
 					"name": "JavaScript",
-					"type": "url",
-					"url": ""
+					"children": []
 				},
 				{
-					"name": "React",
-					"type": "url",
-					"url": ""
+					"name": "Version Control Systems",
+					"children": []
 				},
 				{
-					"name": "Node.js",
-					"type": "url",
-					"url": ""
+					"name": "VCS Hosting",
+					"children": []
 				},
 				{
-					"name": "Express",
-					"type": "url",
-					"url": ""
+					"name": "Package Managers",
+					"children": []
+				},
+				{
+					"name": "Pick a Framework",
+					"children": []
+				},
+				{
+					"name": "Writing CSS",
+					"children": []
+				},
+				{
+					"name": "CSS Architecture",
+					"children": []
+				},
+				{
+					"name": "CSS Preprocessors",
+					"children": []
+				},
+				{
+					"name": "Build Tools",
+					"children": []
+				},
+				{
+					"name": "Modules Bundlers",
+					"children": []
+				},
+				{
+					"name": "Task Runners",
+					"children": []
+				},
+				{
+					"name": "Linters and Formatters",
+					"children": []
+				},
+				{
+					"name": "Testing Your Apps",
+					"children": []
+				},
+				{
+					"name": "Authentication",
+					"children": []
+				},
+				{
+					"name": "Web Security Basics",
+					"children": []
+				},
+				{
+					"name": "Web Components",
+					"children": []
+				},
+				{
+					"name": "Type Checkers",
+					"children": []
+				},
+				{
+					"name": "Server Side Rendering",
+					"children": []
+				},
+				{
+					"name": "GraphQL",
+					"children": []
+				},
+				{
+					"name": "Static Site Generator",
+					"children": []
+				},
+				{
+					"name": "Progressive Web Apps",
+					"children": []
+				},
+				{
+					"name": "Mobile Applications",
+					"children": []
+				},
+				{
+					"name": "Desktop Applications",
+					"children": []
+				},
+				{
+					"name": "Bonus Content",
+					"children": []
 				}
 			]
 		},
 		{
-			"name": "Games",
+			"name": "Back End",
 			"children": [
 				{
-					"name": "HTML Games",
-					"type": "url",
-					"url": ""
+					"name": "Internet",
+					"children": []
 				},
 				{
-					"name": "CSS Games",
-					"type": "url",
-					"url": ""
+					"name": "Learn a Language",
+					"children": []
 				},
 				{
-					"name": "SQL Games",
-					"type": "url",
-					"url": ""
+					"name": "Version Control System",
+					"children": []
 				},
 				{
-					"name": "JavaScript Games",
-					"type": "url",
-					"url": ""
+					"name": "Repo Hosting Services",
+					"children": []
+				},
+				{
+					"name": "Relational Databases",
+					"children": []
+				},
+				{
+					"name": "Learn about APIs",
+					"children": []
+				},
+				{
+					"name": "Caching",
+					"children": []
+				},
+				{
+					"name": "Web Security Knowledge",
+					"children": []
+				},
+				{
+					"name": "Testing",
+					"children": []
+				},
+				{
+					"name": "CI/CD",
+					"children": []
+				},
+				{
+					"name": "Scaling Database",
+					"children": []
+				},
+				{
+					"name": "More about Database",
+					"children": []
+				},
+				{
+					"name": "Software Design",
+					"children": []
+				},
+				{
+					"name": "Architecture",
+					"children": []
+				},
+				{
+					"name": "Development Principles",
+					"children": []
+				},
+				{
+					"name": "Design",
+					"children": []
+				},
+				{
+					"name": "Architectural Patterns",
+					"children": []
+				},
+				{
+					"name": "Message Brokers",
+					"children": []
+				},
+				{
+					"name": "Containerization",
+					"children": []
+				},
+				{
+					"name": "Virtualization",
+					"children": []
+				},
+				{
+					"name": "Web Servers",
+					"children": []
+				},
+				{
+					"name": "NoSQL",
+					"children": []
+				},
+				{
+					"name": "Building for Scale",
+					"children": []
 				}
 			]
 		},
 		{
-			"name": "Frontend Tools",
-			"children": []
+			"name": "Soft Skills",
+			"children": [
+				{
+					"name": "Communication",
+					"children": []
+				},
+				{
+					"name": "Teamwork",
+					"children": []
+				},
+				{
+					"name": "Problem Solving",
+					"children": []
+				},
+				{
+					"name": "Time Management",
+					"children": []
+				},
+				{
+					"name": "Adaptability",
+					"children": []
+				},
+				{
+					"name": "Creativity",
+					"children": []
+				},
+				{
+					"name": "Work Ethic",
+					"children": []
+				},
+				{
+					"name": "Interpersonal Skills",
+					"children": []
+				},
+				{
+					"name": "Attention to Detail",
+					"children": []
+				},
+				{
+					"name": "Leadership",
+					"children": []
+				}
+			]
 		},
 		{
-			"name": "Backend Tools",
-			"children": []
-		},
-		{
-			"name": "Storage",
-			"children": []
-		},
-		{
-			"name": "Frontend",
-			"children": []
-		},
-		{
-			"name": "Backend",
-			"children": []
-		},
-		{
-			"name": "Social Network Analysis",
-			"children": []
-		},
-		{
-			"name": "Scenario Analysis",
-			"children": []
-		},
-		{
-			"name": "Analysis",
-			"children": []
-		},
-		{
-			"name": "Hosting Provider",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Showcase Website",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Vim",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Design",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Illustration",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Icons",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Images",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Infographics",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Voice",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Video",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Tools",
-			"type": "url",
-			"url": ""
-		},
-		{
-			"name": "Training",
-			"type": "url",
-			"url": ""
+			"name": "Tools & Analysis",
+			"children": [
+				{
+					"name": "tools",
+					"children": []
+				},
+				{
+					"name": "Veille concurrentiel",
+					"children": []
+				},
+				{
+					"name": "analyze scenario",
+					"children": []
+				}
+			]
 		}
 	]
 }
-
