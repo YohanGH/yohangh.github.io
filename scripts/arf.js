@@ -1,4 +1,4 @@
-// Définition des dimensions et des marges du graphique
+// Define chart dimensions and margins
 const margin = { top: 20, right: 120, bottom: 20, left: 140 },
 	width = 1200 - margin.left - margin.right,
 	height = 600 - margin.top - margin.bottom;
@@ -10,10 +10,10 @@ let i = 0,
 // Configuration du tree layout
 const tree = d3.layout.tree().size([height, width]);
 
-// Définition de la fonction diagonale pour les liens
+// Define the diagonal function for links
 const diagonal = d3.svg.diagonal().projection((d) => [d.y, d.x]);
 
-// Ajout du SVG au body du document
+// Add SVG to document body
 const svg = d3
 	.select("#tree-container")
 	.append("svg")
@@ -26,18 +26,18 @@ const svg = d3
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// Chargement des données et gestion des erreurs
+// Data loading and error handling
 d3.json("arf.json", function (error, data) {
 	if (error) {
 		console.error("Erreur lors du chargement du fichier JSON:", error);
-		return; // Arrête l'exécution en cas d'erreur
+		return; // stops execution on error
 	}
 
 	root = data;
 	root.x0 = height / 2;
 	root.y0 = 0;
 
-	// Initialisation de l'arbre avec des nœuds repliés
+	// Tree initialization with folded nodes
 	root.children.forEach(collapse);
 
 	update(root);
@@ -52,18 +52,18 @@ function collapse(d) {
 }
 
 function update(source) {
-	// Assignation des ID aux nœuds et inversion de l'arbre
+	// Assign IDs to nodes and invert tree
 	const nodes = tree.nodes(root).reverse(),
 		links = tree.links(nodes);
 
 	nodes.forEach((d) => (d.y = d.depth * 180));
 
-	// Mise à jour des nœuds
+	// Update the nœuds
 	const node = svg
 		.selectAll("g.node")
 		.data(nodes, (d) => d.id || (d.id = ++i));
 
-	// Entrée de nouveaux nœuds
+	// New node entry
 	const nodeEnter = node
 		.enter()
 		.append("g")
@@ -79,7 +79,7 @@ function update(source) {
 		.attr("r", 1e-6)
 		.style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
 
-	// Ajout des balises <a> pour les liens
+	// Add <a> tags for links
 	const nodeLink = nodeEnter
 		.append("a")
 		.attr("xlink:href", (d) => d.url)
@@ -95,7 +95,7 @@ function update(source) {
 		.text((d) => d.name)
 		.style("fill-opacity", 1);
 
-	// Transition pour les nœuds entrants
+	// Transition for incoming nodes
 	const nodeUpdate = node
 		.transition()
 		.duration(duration)
@@ -103,12 +103,12 @@ function update(source) {
 
 	nodeUpdate
 		.select("circle")
-		.attr("r", 4,5)
+		.attr("r", 4, 5)
 		.style("fill", (d) => (d._children ? "lightsteelblue" : "#fff"));
 
 	nodeUpdate.select("text").style("fill-opacity", 1);
 
-	// Transition pour les nœuds sortants vers la nouvelle position du parent
+	// Transition for outgoing nodes to new parent position
 	const nodeExit = node
 		.exit()
 		.transition()
@@ -120,10 +120,10 @@ function update(source) {
 
 	nodeExit.select("text").style("fill-opacity", 1e-6);
 
-	// Mise à jour des liens
+	// Update the links
 	const link = svg.selectAll("path.link").data(links, (d) => d.target.id);
 
-	// Entrée de nouveaux liens
+	// New links entry
 	link.enter()
 		.insert("path", "g")
 		.attr("class", "link")
@@ -135,10 +135,10 @@ function update(source) {
 		.duration(duration)
 		.attr("d", diagonal);
 
-	// Transition pour les liens entrants
+	// Transition for incoming links
 	link.transition().duration(duration).attr("d", diagonal);
 
-	// Transition pour les liens sortants vers la nouvelle position du parent
+	// Transition for outgoing links to new parent position
 	link.exit()
 		.transition()
 		.duration(duration)
@@ -148,14 +148,14 @@ function update(source) {
 		})
 		.remove();
 
-	// Sauvegarde des positions anciennes pour la transition
+	// Save old positions for transition
 	nodes.forEach((d) => {
 		d.x0 = d.x;
 		d.y0 = d.y;
 	});
 }
 
-// Fonction pour basculer entre les enfants et les enfants cachés
+// Function to toggle between children and hidden children
 function toggle(d) {
 	if (d.children) {
 		d._children = d.children;
@@ -166,4 +166,3 @@ function toggle(d) {
 	}
 	update(d);
 }
-
