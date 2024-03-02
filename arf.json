@@ -1,0 +1,273 @@
+{
+	"name": "Full Stack",
+	"children": [
+		{
+			"name": "Web Browsers",
+			"children": [
+				{
+					"name": "Google Chrome",
+					"type": "url",
+					"url": "https://www.google.com/intl/en/chrome/"
+				},
+				{
+					"name": "Safari",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Mozilla Firefox",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Arc",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Waterfox",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Opera",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Vivaldi",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Microsoft Edge",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Sidekick",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Polypane",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "Mail",
+			"children": [
+				{
+					"name": "Polypane",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "AI",
+			"children": [
+				{
+					"name": "Drawing",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Music",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Video",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Text",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "Web Development Training",
+			"children": [
+				{
+					"name": "Schools",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Courses",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Resources",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "Official Documentation",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Programming Languages",
+			"children": [
+				{
+					"name": "CSS",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "HTML",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "JavaScript",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "React",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Node.js",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "Express",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"children": [
+				{
+					"name": "HTML Games",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "CSS Games",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "SQL Games",
+					"type": "url",
+					"url": ""
+				},
+				{
+					"name": "JavaScript Games",
+					"type": "url",
+					"url": ""
+				}
+			]
+		},
+		{
+			"name": "Frontend Tools",
+			"children": []
+		},
+		{
+			"name": "Backend Tools",
+			"children": []
+		},
+		{
+			"name": "Storage",
+			"children": []
+		},
+		{
+			"name": "Frontend",
+			"children": []
+		},
+		{
+			"name": "Backend",
+			"children": []
+		},
+		{
+			"name": "Social Network Analysis",
+			"children": []
+		},
+		{
+			"name": "Scenario Analysis",
+			"children": []
+		},
+		{
+			"name": "Analysis",
+			"children": []
+		},
+		{
+			"name": "Hosting Provider",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Showcase Website",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Vim",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Design",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Illustration",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Icons",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Images",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Infographics",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Voice",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Video",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Tools",
+			"type": "url",
+			"url": ""
+		},
+		{
+			"name": "Training",
+			"type": "url",
+			"url": ""
+		}
+	]
+}
+
