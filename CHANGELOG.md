@@ -12,6 +12,6 @@
 # **************************************************************************** #
 ```
 
-## 1.0.0 {commit : 5d0528d1260effc02719ae01a917b49bda298220 }
+## 1.0.0
 
-- Initial commit, first version.
+- Initial commit, first version. {commit : 5d0528d1260effc02719ae01a917b49bda298220 }
