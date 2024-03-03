@@ -236,7 +236,28 @@
 				},
 				{
 					"name": "JavaScript",
-					"children": []
+					"children": [
+						{
+							"name": "Documentation officielle ECMAScript",
+							"type": "url",
+							"url": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+						},
+						{
+							"name": "Framework Vue.js",
+							"type": "url",
+							"url": "https://vuejs.org/"
+						},
+						{
+							"name": "Framework React",
+							"type": "url",
+							"url": "https://reactjs.org/"
+						},
+						{
+							"name": "Framework Angular",
+							"type": "url",
+							"url": "https://angular.io/"
+						}
+					]
 				},
 				{
 					"name": "Version Control Systems",
@@ -255,91 +276,253 @@
 				},
 				{
 					"name": "VCS Hosting",
-					"children": []
+					"children": [
+						{
+							"name": "Bitbucket",
+							"type": "url",
+							"url": "https://bitbucket.org/"
+						}
+					]
 				},
 				{
 					"name": "Package Managers",
-					"children": []
+					"children": [
+						{
+							"name": "npm",
+							"type": "url",
+							"url": "https://www.npmjs.com/"
+						},
+						{
+							"name": "Yarn",
+							"type": "url",
+							"url": "https://yarnpkg.com/"
+						}
+					]
 				},
 				{
 					"name": "Pick a Framework",
-					"children": []
+					"children": [
+						{
+							"name": "Svelte",
+							"type": "url",
+							"url": "https://svelte.dev/"
+						}
+					]
 				},
 				{
 					"name": "Writing CSS",
-					"children": []
+					"children": [
+						{
+							"name": "Méthodologie BEM",
+							"type": "url",
+							"url": "http://getbem.com/"
+						}
+					]
 				},
 				{
 					"name": "CSS Architecture",
-					"children": []
+					"children": [
+						{
+							"name": "OOCSS",
+							"type": "url",
+							"url": "https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/"
+						}
+					]
 				},
 				{
 					"name": "CSS Preprocessors",
-					"children": []
+					"children": [
+						{
+							"name": "SASS",
+							"type": "url",
+							"url": "https://sass-lang.com/"
+						},
+						{
+							"name": "LESS",
+							"type": "url",
+							"url": "https://lesscss.org/"
+						}
+					]
 				},
 				{
 					"name": "Build Tools",
-					"children": []
+					"children": [
+						{
+							"name": "Webpack",
+							"type": "url",
+							"url": "https://webpack.js.org/"
+						},
+						{
+							"name": "Parcel",
+							"type": "url",
+							"url": "https://parceljs.org/"
+						}
+					]
 				},
 				{
 					"name": "Modules Bundlers",
-					"children": []
+					"children": [
+						{
+							"name": "Rollup",
+							"type": "url",
+							"url": "https://rollupjs.org/guide/en/"
+						}
+					]
 				},
 				{
 					"name": "Task Runners",
-					"children": []
+					"children": [
+						{
+							"name": "Gulp",
+							"type": "url",
+							"url": "https://gulpjs.com/"
+						},
+						{
+							"name": "Grunt",
+							"type": "url",
+							"url": "https://gruntjs.com/"
+						}
+					]
 				},
 				{
 					"name": "Linters and Formatters",
-					"children": []
+					"children": [
+						{
+							"name": "ESLint",
+							"type": "url",
+							"url": "https://eslint.org/"
+						},
+						{
+							"name": "Prettier",
+							"type": "url",
+							"url": "https://prettier.io/"
+						}
+					]
 				},
 				{
 					"name": "Testing Your Apps",
-					"children": []
+					"children": [
+						{
+							"name": "Jest",
+							"type": "url",
+							"url": "https://jestjs.io/"
+						},
+						{
+							"name": "Mocha",
+							"type": "url",
+							"url": "https://mochajs.org/"
+						}
+					]
 				},
 				{
 					"name": "Authentication",
-					"children": []
+					"children": [
+						{
+							"name": "Auth0",
+							"type": "url",
+							"url": "https://auth0.com/"
+						}
+					]
 				},
 				{
 					"name": "Web Security Basics",
-					"children": []
+					"children": [
+						{
+							"name": "OWASP Top Ten",
+							"type": "url",
+							"url": "https://owasp.org/www-project-top-ten/"
+						}
+					]
 				},
 				{
 					"name": "Web Components",
-					"children": []
+					"children": [
+						{
+							"name": "WebComponents.org",
+							"type": "url",
+							"url": "https://www.webcomponents.org/"
+						}
+					]
 				},
 				{
 					"name": "Type Checkers",
-					"children": []
+					"children": [
+						{
+							"name": "TypeScript",
+							"type": "url",
+							"url": "https://www.typescriptlang.org/"
+						}
+					]
 				},
 				{
 					"name": "Server Side Rendering",
-					"children": []
+					"children": [
+						{
+							"name": "Next.js",
+							"type": "url",
+							"url": "https://nextjs.org/"
+						}
+					]
 				},
 				{
 					"name": "GraphQL",
-					"children": []
+					"children": [
+						{
+							"name": "Apollo GraphQL",
+							"type": "url",
+							"url": "https://www.apollographql.com/"
+						}
+					]
 				},
 				{
 					"name": "Static Site Generator",
-					"children": []
+					"children": [
+						{
+							"name": "Gatsby",
+							"type": "url",
+							"url": "https://www.gatsbyjs.com/"
+						}
+					]
 				},
 				{
 					"name": "Progressive Web Apps",
-					"children": []
+					"children": [
+						{
+							"name": "Workbox",
+							"type": "url",
+							"url": "https://developers.google.com/web/tools/workbox"
+						}
+					]
 				},
 				{
 					"name": "Mobile Applications",
-					"children": []
+					"children": [
+						{
+							"name": "React Native",
+							"type": "url",
+							"url": "https://reactnative.dev/"
+						}
+					]
 				},
 				{
 					"name": "Desktop Applications",
-					"children": []
+					"children": [
+						{
+							"name": "Electron",
+							"type": "url",
+							"url": "https://www.electronjs.org/"
+						}
+					]
 				},
 				{
 					"name": "Bonus Content",
-					"children": []
+					"children": [
+						{
+							"name": "WebAssembly",
+							"type": "url",
+							"url": "https://webassembly.org/"
+						}
+					]
 				}
 			]
 		},
@@ -348,75 +531,218 @@
 			"children": [
 				{
 					"name": "Internet",
-					"children": []
+					"children": [
+						{
+							"name": "How the Internet Works",
+							"type": "url",
+							"url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+						}
+					]
 				},
 				{
 					"name": "Learn a Language",
-					"children": []
+					"children": [
+						{
+							"name": "Python",
+							"type": "url",
+							"url": "https://www.python.org/"
+						},
+						{
+							"name": "Node.js",
+							"type": "url",
+							"url": "https://nodejs.org/"
+						}
+					]
 				},
 				{
 					"name": "Version Control System",
-					"children": []
+					"children": [
+						{
+							"name": "Mercurial",
+							"type": "url",
+							"url": "https://www.mercurial-scm.org/"
+						}
+					]
 				},
 				{
 					"name": "Repo Hosting Services",
-					"children": []
+					"children": [
+						{
+							"name": "SourceForge",
+							"type": "url",
+							"url": "https://sourceforge.net/"
+						}
+					]
 				},
 				{
 					"name": "Relational Databases",
-					"children": []
+					"children": [
+						{
+							"name": "MySQL",
+							"type": "url",
+							"url": "https://www.mysql.com/"
+						},
+						{
+							"name": "PostgreSQL",
+							"type": "url",
+							"url": "https://www.postgresql.org/"
+						}
+					]
 				},
 				{
 					"name": "Learn about APIs",
-					"children": []
+					"children": [
+						{
+							"name": "REST",
+							"type": "url",
+							"url": "https://restfulapi.net/"
+						},
+						{
+							"name": "GraphQL",
+							"type": "url",
+							"url": "https://graphql.org/learn/"
+						}
+					]
 				},
 				{
 					"name": "Caching",
-					"children": []
+					"children": [
+						{
+							"name": "Redis",
+							"type": "url",
+							"url": "https://redis.io/"
+						},
+						{
+							"name": "Memcached",
+							"type": "url",
+							"url": "https://memcached.org/"
+						}
+					]
 				},
 				{
 					"name": "Web Security Knowledge",
-					"children": []
+					"children": [
+						{
+							"name": "Secure Coding Practices",
+							"type": "url",
+							"url": "https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project"
+						}
+					]
 				},
 				{
 					"name": "Testing",
-					"children": []
+					"children": [
+						{
+							"name": "Pytest",
+							"type": "url",
+							"url": "https://pytest.org/"
+						},
+						{
+							"name": "JUnit",
+							"type": "url",
+							"url": "https://junit.org/junit5/"
+						}
+					]
 				},
 				{
 					"name": "CI/CD",
-					"children": []
+					"children": [
+						{
+							"name": "Jenkins",
+							"type": "url",
+							"url": "https://www.jenkins.io/"
+						},
+						{
+							"name": "GitLab CI",
+							"type": "url",
+							"url": "https://docs.gitlab.com/ee/ci/"
+						}
+					]
 				},
 				{
 					"name": "Scaling Database",
-					"children": []
+					"children": [
+						{
+							"name": "Database Sharding",
+							"type": "url",
+							"url": "https://www.digitalocean.com/community/tutorials/understanding-database-sharding"
+						}
+					]
 				},
 				{
 					"name": "More about Database",
-					"children": []
+					"children": [
+						{
+							"name": "Database Indexing",
+							"type": "url",
+							"url": "https://www.sqlshack.com/understanding-database-indexing/"
+						}
+					]
 				},
 				{
 					"name": "Software Design",
-					"children": []
+					"children": [
+						{
+							"name": "SOLID Principles",
+							"type": "url",
+							"url": "https://en.wikipedia.org/wiki/SOLID"
+						}
+					]
 				},
 				{
 					"name": "Architecture",
-					"children": []
+					"children": [
+						{
+							"name": "Microservices",
+							"type": "url",
+							"url": "https://microservices.io/"
+						}
+					]
 				},
 				{
 					"name": "Development Principles",
-					"children": []
+					"children": [
+						{
+							"name": "DRY (Don't Repeat Yourself)",
+							"type": "url",
+							"url": "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"
+						}
+					]
 				},
 				{
 					"name": "Design",
-					"children": []
+					"children": [
+						{
+							"name": "Design Patterns",
+							"type": "url",
+							"url": "https://refactoring.guru/design-patterns"
+						}
+					]
 				},
 				{
 					"name": "Architectural Patterns",
-					"children": []
+					"children": [
+						{
+							"name": "Event-Driven Architecture",
+							"type": "url",
+							"url": "https://en.wikipedia.org/wiki/Event-driven_architecture"
+						}
+					]
 				},
 				{
 					"name": "Message Brokers",
-					"children": []
+					"children": [
+						{
+							"name": "RabbitMQ",
+							"type": "url",
+							"url": "https://www.rabbitmq.com/"
+						},
+						{
+							"name": "Kafka",
+							"type": "url",
+							"url": "https://kafka.apache.org/"
+						}
+					]
 				},
 				{
 					"name": "Containerization",
@@ -440,7 +766,18 @@
 				},
 				{
 					"name": "Web Servers",
-					"children": []
+					"children": [
+						{
+							"name": "Nginx",
+							"type": "url",
+							"url": "https://nginx.org/en/"
+						},
+						{
+							"name": "Apache",
+							"type": "url",
+							"url": "https://httpd.apache.org/"
+						}
+					]
 				},
 				{
 					"name": "SQL",
@@ -463,7 +800,13 @@
 				},
 				{
 					"name": "Building for Scale",
-					"children": []
+					"children": [
+						{
+							"name": "Load Balancing",
+							"type": "url",
+							"url": "https://www.nginx.com/resources/glossary/load-balancing/"
+						}
+					]
 				}
 			]
 		},
@@ -472,43 +815,103 @@
 			"children": [
 				{
 					"name": "Communication",
-					"children": []
+					"children": [
+						{
+							"name": "Effective Communication Skills",
+							"type": "url",
+							"url": "https://www.mindtools.com/page8.html"
+						}
+					]
 				},
 				{
 					"name": "Teamwork",
-					"children": []
+					"children": [
+						{
+							"name": "The Importance of Teamwork",
+							"type": "url",
+							"url": "https://www.indeed.com/career-advice/career-development/importance-of-teamwork"
+						}
+					]
 				},
 				{
 					"name": "Problem Solving",
-					"children": []
+					"children": [
+						{
+							"name": "Problem Solving Skills",
+							"type": "url",
+							"url": "https://www.skillsyouneed.com/ips/problem-solving.html"
+						}
+					]
 				},
 				{
 					"name": "Time Management",
-					"children": []
+					"children": [
+						{
+							"name": "Time Management Tips",
+							"type": "url",
+							"url": "https://www.mindtools.com/pages/article/newHTE_00.htm"
+						}
+					]
 				},
 				{
 					"name": "Adaptability",
-					"children": []
+					"children": [
+						{
+							"name": "The Power of Adaptability",
+							"type": "url",
+							"url": "https://www.forbes.com/sites/forbescoachescouncil/2017/10/30/the-importance-of-adaptability-and-its-impact-on-wellness/"
+						}
+					]
 				},
 				{
 					"name": "Creativity",
-					"children": []
+					"children": [
+						{
+							"name": "Boosting Creativity",
+							"type": "url",
+							"url": "https://www.creativityatwork.com/2014/02/17/how-to-boost-creativity/"
+						}
+					]
 				},
 				{
 					"name": "Work Ethic",
-					"children": []
+					"children": [
+						{
+							"name": "Developing a Strong Work Ethic",
+							"type": "url",
+							"url": "https://www.indeed.com/career-advice/career-development/strong-work-ethic"
+						}
+					]
 				},
 				{
 					"name": "Interpersonal Skills",
-					"children": []
+					"children": [
+						{
+							"name": "Interpersonal Skills in the Workplace",
+							"type": "url",
+							"url": "https://www.indeed.com/career-advice/resumes-cover-letters/interpersonal-skills"
+						}
+					]
 				},
 				{
 					"name": "Attention to Detail",
-					"children": []
+					"children": [
+						{
+							"name": "Improving Attention to Detail",
+							"type": "url",
+							"url": "https://www.americanexpress.com/en-us/business/trends-and-insights/articles/4-ways-to-improve-your-attention-to-detail/"
+						}
+					]
 				},
 				{
 					"name": "Leadership",
-					"children": []
+					"children": [
+						{
+							"name": "Leadership Skills",
+							"type": "url",
+							"url": "https://www.mindtools.com/pages/main/newMN_LDR.htm"
+						}
+					]
 				}
 			]
 		},
@@ -517,15 +920,38 @@
 			"children": [
 				{
 					"name": "tools",
-					"children": []
+					"children": [
+						{
+							"name": "Postman",
+							"type": "url",
+							"url": "https://www.postman.com/"
+						},
+						{
+							"name": "Swagger",
+							"type": "url",
+							"url": "https://swagger.io/"
+						}
+					]
 				},
 				{
 					"name": "Veille concurrentiel",
-					"children": []
+					"children": [
+						{
+							"name": "Google Trends",
+							"type": "url",
+							"url": "https://trends.google.com/trends/?geo=US"
+						}
+					]
 				},
 				{
 					"name": "analyze scenario",
-					"children": []
+					"children": [
+						{
+							"name": "Scenario Analysis in Business",
+							"type": "url",
+							"url": "https://www.investopedia.com/terms/s/scenario_analysis.asp"
+						}
+					]
 				}
 			]
 		},
