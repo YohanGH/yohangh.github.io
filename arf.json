@@ -96,6 +96,21 @@
 											"name": "Convertico favicon",
 											"type": "url",
 											"url": "https://convertico.com"
+										},
+										{
+											"name": "Code Sandbox",
+											"type": "url",
+											"url": "https://codesandbox.io"
+										},
+										{
+											"name": "Diagrams.net",
+											"type": "url",
+											"url": "https://app.diagrams.net"
+										},
+										{
+											"name": "Inkscape",
+											"type": "url",
+											"url": "https://inkscape.org"
 										}
 									]
 								}
@@ -256,6 +271,36 @@
 							"name": "Framework Angular",
 							"type": "url",
 							"url": "https://angular.io/"
+						},
+						{
+							"name": "MDN JavaScript",
+							"type": "url",
+							"url": "https://developer.mozilla.org/fr/docs/Learn/JavaScript"
+						},
+						{
+							"name": "Learn JS",
+							"type": "url",
+							"url": "https://www.learn-js.org/en/Welcome"
+						},
+						{
+							"name": "JavaScript.info",
+							"type": "url",
+							"url": "https://javascript.info"
+						},
+						{
+							"name": "Programiz JavaScript",
+							"type": "url",
+							"url": "https://www.programiz.com/javascript/get-started"
+						},
+						{
+							"name": "Eloquent JavaScript",
+							"type": "url",
+							"url": "https://eloquentjavascript.net"
+						},
+						{
+							"name": "JavaScript30",
+							"type": "url",
+							"url": "https://javascript30.com"
 						}
 					]
 				},
@@ -716,6 +761,21 @@
 							"name": "Design Patterns",
 							"type": "url",
 							"url": "https://refactoring.guru/design-patterns"
+						},
+						{
+							"name": "Google Fonts",
+							"type": "url",
+							"url": "https://fonts.google.com/"
+						},
+						{
+							"name": "Apprendre Personas",
+							"type": "url",
+							"url": "https://www.weloveusers.com/partage/cours/apprendre-personas.html"
+						},
+						{
+							"name": "Daily UI",
+							"type": "url",
+							"url": "https://www.dailyui.co"
 						}
 					]
 				},
@@ -783,6 +843,11 @@
 					"name": "SQL",
 					"children": [
 						{
+							"name": "SQLite Datatypes",
+							"type": "url",
+							"url": "https://www.sqlite.org/datatype3.html#datatypes_in_sqlite"
+						},
+						{
 							"name": "NoSQL",
 							"children": []
 						},
@@ -820,6 +885,16 @@
 							"name": "Effective Communication Skills",
 							"type": "url",
 							"url": "https://www.mindtools.com/page8.html"
+						},
+						{
+							"name": "Discord",
+							"type": "url",
+							"url": "https://discord.com"
+						},
+						{
+							"name": "Slack",
+							"type": "url",
+							"url": "https://slack.com"
 						}
 					]
 				},
@@ -912,6 +987,16 @@
 							"url": "https://www.mindtools.com/pages/main/newMN_LDR.htm"
 						}
 					]
+				},
+				{
+					"name": "Project Management",
+					"children": [
+						{
+							"name": "Start.me Development Dashboard",
+							"type": "url",
+							"url": "https://start.me/p/5kvXzP/develop"
+						}
+					]
 				}
 			]
 		},
@@ -930,6 +1015,26 @@
 							"name": "Swagger",
 							"type": "url",
 							"url": "https://swagger.io/"
+						},
+						{
+							"name": "Vim Documentation",
+							"type": "url",
+							"url": "https://vimdoc.sourceforge.net/vimum.html"
+						},
+						{
+							"name": "Homebrew",
+							"type": "url",
+							"url": "https://brew.sh"
+						},
+						{
+							"name": "ThirdWeb Storage",
+							"type": "url",
+							"url": "https://thirdweb.com/storage"
+						},
+						{
+							"name": "IPFS",
+							"type": "url",
+							"url": "https://ipfs.tech"
 						}
 					]
 				},
@@ -940,6 +1045,36 @@
 							"name": "Google Trends",
 							"type": "url",
 							"url": "https://trends.google.com/trends/?geo=US"
+						}
+					]
+				},
+				{
+					"name": "Learning Resources",
+					"children": [
+						{
+							"name": "Khan Academy",
+							"type": "url",
+							"url": "https://www.khanacademy.org"
+						},
+						{
+							"name": "Editions ENI",
+							"type": "url",
+							"url": "https://www.editions-eni.fr"
+						},
+						{
+							"name": "Coding Practice",
+							"children": [
+								{
+									"name": "Blockly Games",
+									"type": "url",
+									"url": "https://blockly.games/maze?lang=en"
+								},
+								{
+									"name": "Root-Me",
+									"type": "url",
+									"url": "https://www.root-me.org/fr/Challenges/"
+								}
+							]
 						}
 					]
 				},
