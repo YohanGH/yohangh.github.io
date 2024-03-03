@@ -20,6 +20,8 @@
 	--font-size-small: 10px;
 	--font-size-large: 24px;
 	--font-size-text: 12px;
+	--font-size-text-tab: 18px;
+	--font-size-text-mobile: 12px;
 
 	/* Tailles de marges et de paddings */
 	--margin-standard: 20px;
@@ -35,7 +37,8 @@ body {
 	background-color: var(--background-color);
 	color: var(--text-color-pink-neon);
 	font-size: var(--font-size-normal);
-	font-family: var(--font-family); }
+	font-family: var(--font-family);
+}
 
 a {
 	color: var(--text-color-purple-neon);
@@ -98,7 +101,12 @@ footer {
 
 /* Media queries */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-width: 1200px) {
+	.node text {
+		font-size: var(--font-size-text-tab);
+	}
+}
+@media screen and (max-width: 768px) {
 	:root {
 		--font-size-normal: 16px;
 		--font-size-title: 32px;
@@ -111,9 +119,12 @@ footer {
 		width: auto;
 		padding: var(--padding-small);
 	}
+	.node text {
+		font-size: var(--font-size-text-mobile);
+	}
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	:root {
 		--font-size-normal: 14px;
 		--font-size-title: 24px;
@@ -125,8 +136,7 @@ footer {
 	#header {
 		font-size: var(--font-size-title);
 	}
-
 	.node text {
-		font-size: var(--font-size-small);
+		font-size: var(--font-size-text-mobile);
 	}
 }
