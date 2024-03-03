@@ -1,7 +1,7 @@
 // Define chart dimensions and margins
 const margin = { top: 20, right: 120, bottom: 20, left: 140 },
 	width = 1200 - margin.left - margin.right,
-	height = 600 - margin.top - margin.bottom;
+	height = 800 - margin.top - margin.bottom;
 
 let i = 0,
 	duration = 750,
