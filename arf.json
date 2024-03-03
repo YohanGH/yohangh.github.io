@@ -5,15 +5,52 @@
 			"name": "Front End",
 			"children": [
 				{
-					"name": "Internet",
-					"children": []
+					"name": "Web browser",
+					"children": [
+						{
+							"name": "Tor project",
+							"type": "url",
+							"url": "https://www.torproject.org/fr/download/"
+						},
+						{
+							"name": "Safari",
+							"type": "url",
+							"url": "https://www.apple.com/fr/safari/"
+						},
+						{
+							"name": "Modzilla Firefox",
+							"type": "url",
+							"url": "https://www.mozilla.org/"
+						},
+						{
+							"name": "Google Chrome",
+							"type": "url",
+							"url": "https://www.google.com/intl/fr/chrome/"
+						},
+						{
+							"name": "Opera",
+							"type": "url",
+							"url": "https://www.opera.com/"
+						},
+						{
+							"name": "Microsoft Edge",
+							"type": "url",
+							"url": "https://www.microsoft.com/fr-fr/edge"
+						}
+					]
 				},
 				{
 					"name": "Web Development",
 					"children": [
 						{
 							"name": "hébergeur",
-							"children": []
+							"children": [
+								{
+									"name": "o2switch",
+									"type": "url",
+									"url": "https://www.o2switch.fr/"
+								}
+							]
 						},
 						{
 							"name": "Site vitrine",
@@ -23,8 +60,44 @@
 							"name": "HTML",
 							"children": [
 								{
+									"name": "Validator",
+									"type": "url",
+									"url": "https://validator.w3.org"
+								},
+								{
+									"name": "html w3docs",
+									"type": "url",
+									"url": "https://fr.w3docs.com/apprendre-html/introduction-a-html5.html"
+								},
+								{
+									"name": "html mimifier",
+									"type": "url",
+									"url": "https://kangax.github.io/html-minifier/"
+								},
+								{
 									"name": "Jeux html",
-									"children": []
+									"children": [
+										{
+											"name": "Codepip",
+											"type": "url",
+											"url": "https://codepip.com/"
+										},
+										{
+											"name": "Codepen",
+											"type": "url",
+											"url": "https://codepen.io/"
+										}
+									]
+								},
+								{
+									"name": "Tools",
+									"children": [
+										{
+											"name": "Convertico favicon",
+											"type": "url",
+											"url": "https://convertico.com"
+										}
+									]
 								}
 							]
 						},
@@ -32,12 +105,38 @@
 							"name": "CSS",
 							"children": [
 								{
+									"name": "Validator",
+									"type": "url",
+									"url": "https://jigsaw.w3.org/css-validator/#validate_by_input"
+								},
+								{
+									"name": "Grid generator",
+									"type": "url",
+									"url": "https://grid.layoutit.com/?source=codeur-com-blog&utm_source=codeur-com-blog"
+								},
+								{
+									"name": "CSS Tutorial",
+									"type": "url",
+									"url": "https://www.tutorialspoint.com/css/css_pitch-range.htm"
+								},
+								{
+									"name": "CSS W3schools",
+									"type": "url",
+									"url": "https://www.w3schools.com/w3css/default.asp"
+								},
+								{
+									"name": "Formation CSS",
+									"type": "url",
+									"url": "https://grafikart.fr/formations/css"
+								},
+
+								{
 									"name": "jeux CSS",
 									"children": [
 										{
 											"name": "css garden",
 											"type": "url",
-											"url": "http://cssgarden.com"
+											"url": "https://cssgridgarden.com/"
 										},
 										{
 											"name": "flexbox froggy",
@@ -70,27 +169,68 @@
 					"children": [
 						{
 							"name": "Illustration",
-							"children": []
+							"children": [
+								{
+									"name": "Figma",
+									"type": "url",
+									"url": "https://www.figma.com/f"
+								}
+							]
 						},
 						{
 							"name": "icônes",
-							"children": []
+							"children": [
+								{
+									"name": "Flaticon",
+									"type": "url",
+									"url": "https://www.flaticon.com"
+								}
+							]
 						},
 						{
 							"name": "images",
-							"children": []
+							"children": [
+								{
+									"name": "Pixabay",
+									"type": "url",
+									"url": "https://pixabay.com/fr/"
+								}
+							]
 						},
 						{
 							"name": "infographie",
-							"children": []
+							"children": [
+								{
+									"name": "Visme",
+									"type": "url",
+									"url": "https://www.visme.co/templates/"
+								}
+							]
 						},
 						{
 							"name": "voice",
-							"children": []
+							"children": [
+								{
+									"name": "Vanillavoice",
+									"type": "url",
+									"url": "https://www.vanillavoice.com"
+								}
+							]
 						},
 						{
 							"name": "video",
-							"children": []
+							"children": [
+								{
+									"name": "Pexels",
+									"type": "url",
+									"url": "https://www.pexels.com/search/videos/cat/"
+								},
+								{
+									"name": "VTT",
+									"type": "url",
+									"url": "https://www.vtt-creator.com/editor"
+								}
+							]
 						}
 					]
 				},
@@ -100,7 +240,18 @@
 				},
 				{
 					"name": "Version Control Systems",
-					"children": []
+					"children": [
+						{
+							"name": "Github",
+							"type": "url",
+							"url": "https://github.com/"
+						},
+						{
+							"name": "GitLab",
+							"type": "url",
+							"url": "https://about.gitlab.com"
+						}
+					]
 				},
 				{
 					"name": "VCS Hosting",
@@ -269,19 +420,46 @@
 				},
 				{
 					"name": "Containerization",
-					"children": []
+					"children": [
+						{
+							"name": "Docker",
+							"type": "url",
+							"url": "https://www.docker.com/products/docker-desktop/"
+						}
+					]
 				},
 				{
 					"name": "Virtualization",
-					"children": []
+					"children": [
+						{
+							"name": "VirtualBox",
+							"type": "url",
+							"url": "https://www.virtualbox.org"
+						}
+					]
 				},
 				{
 					"name": "Web Servers",
 					"children": []
 				},
 				{
-					"name": "NoSQL",
-					"children": []
+					"name": "SQL",
+					"children": [
+						{
+							"name": "NoSQL",
+							"children": []
+						},
+						{
+							"name": "jeux SQL",
+							"children": [
+								{
+									"name": "SQLPD",
+									"type": "url",
+									"url": "https://sqlpd.com/"
+								}
+							]
+						}
+					]
 				},
 				{
 					"name": "Building for Scale",
@@ -348,6 +526,16 @@
 				{
 					"name": "analyze scenario",
 					"children": []
+				}
+			]
+		},
+		{
+			"name": "Regulations",
+			"children": [
+				{
+					"name": "GDPR",
+					"type": "url",
+					"url": "https://gdpr-info.eu"
 				}
 			]
 		}
