@@ -12,6 +12,11 @@
 # **************************************************************************** #
 ```
 
+## 1.1.0
+
+- Fix bug.
+- Add content in json.
+
 ## 1.0.0
 
 - Initial commit, first version. {commit : 5d0528d1260effc02719ae01a917b49bda298220 }
