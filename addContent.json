@@ -1,0 +1,53 @@
+    {
+       {
+      "name": "Development Resources",
+      "children": [
+        {
+          "name": "Developpez.com",
+          "type": "url",
+              "url": "https://www.developpez.com"
+        },
+        {
+          "name": "DEV Community",
+          "type": "url",
+              "url": "https://dev.to"
+        },
+        {
+          "name": "DZone",
+          "type": "url",
+              "url": "https://dzone.com"
+        }
+      ]
+    },
+    {
+      "name": "Community and Publishing Platforms",
+      "children": [
+        {
+          "name": "Medium",
+          "type": "url",
+          "url": "https://medium.com"
+        }
+      ]
+
+      "name": "PHP",
+      "children": [
+        {
+          "name": "PHP Weekly",
+          "type": "url",
+          "url": "https://phpweekly.com"
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "children": [
+        {
+          "name": "Baeldung Java Web Weekly",
+          "type": "url",
+          "url": "https://www.baeldung.com/java-web-weekly"
+        }
+      ]
+    }
+  ]
+}
+

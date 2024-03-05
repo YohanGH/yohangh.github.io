@@ -144,7 +144,16 @@
 									"type": "url",
 									"url": "https://grafikart.fr/formations/css"
 								},
-
+								{
+									"name": "CSS-Tricks",
+									"type": "url",
+									"url": "https://css-tricks.com"
+								},
+								{
+									"name": "CSS Weekly",
+									"type": "url",
+									"url": "https://css-weekly.com"
+								},
 								{
 									"name": "jeux CSS",
 									"children": [
@@ -189,6 +198,36 @@
 									"name": "Figma",
 									"type": "url",
 									"url": "https://www.figma.com/f"
+								},
+								{
+									"name": "UX vs UI Design",
+									"type": "url",
+									"url": "https://designveloperdsv.medium.com/ux-vs-ui-the-difference-between-ux-and-ui-design-d35c33da08ef"
+								},
+								{
+									"name": "Interaction Design Foundation (UX Design)",
+									"type": "url",
+									"url": "https://www.interaction-design.org/literature/topics/ux-design"
+								},
+								{
+									"name": "NNGroup (User Experience)",
+									"type": "url",
+									"url": "https://www.nngroup.com/articles/definition-user-experience/"
+								},
+								{
+									"name": "CSS-Tricks",
+									"type": "url",
+									"url": "https://css-tricks.com"
+								},
+								{
+									"name": "Smashing Magazine",
+									"type": "url",
+									"url": "https://www.smashingmagazine.com"
+								},
+								{
+									"name": "Alsacreations",
+									"type": "url",
+									"url": "https://www.alsacreations.com"
 								}
 							]
 						},
@@ -263,9 +302,19 @@
 							"url": "https://vuejs.org/"
 						},
 						{
-							"name": "Framework React",
-							"type": "url",
-							"url": "https://reactjs.org/"
+							"name": "React",
+							"children": [
+								{
+									"name": "Framework React",
+									"type": "url",
+									"url": "https://reactjs.org/"
+								},
+								{
+									"name": "React Status Code",
+									"type": "url",
+									"url": "https://react.statuscode.com"
+								}
+							]
 						},
 						{
 							"name": "Framework Angular",
@@ -301,6 +350,36 @@
 							"name": "JavaScript30",
 							"type": "url",
 							"url": "https://javascript30.com"
+						},
+						{
+							"name": "JavaScript Weekly",
+							"type": "url",
+							"url": "https://javascriptweekly.com"
+						},
+						{
+							"name": "ECMAScript 2019",
+							"type": "url",
+							"url": "https://262.ecma-international.org/10.0/"
+						},
+						{
+							"name": "JavaScript.info Introduction",
+							"type": "url",
+							"url": "https://javascript.info/intro"
+						},
+						{
+							"name": "MDN What is JavaScript?",
+							"type": "url",
+							"url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+						},
+						{
+							"name": "Dev.to Semicolons",
+							"type": "url",
+							"url": "https://dev.to/adriennemiller/semicolons-in-javascript-to-use-or-not-to-use-2nli"
+						},
+						{
+							"name": "JavaScript.info Arrays",
+							"type": "url",
+							"url": "https://javascript.info/array"
 						}
 					]
 				},
@@ -606,6 +685,16 @@
 							"name": "Mercurial",
 							"type": "url",
 							"url": "https://www.mercurial-scm.org/"
+						},
+						{
+							"name": "Bitbucket",
+							"type": "url",
+							"url": "https://bitbucket.org"
+						},
+						{
+							"name": "Getting Started with the GitHub CLI",
+							"type": "url",
+							"url": "https://blog.devgenius.io/getting-started-with-the-github-cli-2a723585e368"
 						}
 					]
 				},
@@ -1045,6 +1134,111 @@
 							"name": "Google Trends",
 							"type": "url",
 							"url": "https://trends.google.com/trends/?geo=US"
+						},
+						{
+							"name": "Comment rester à jour technologiquement",
+							"type": "url",
+							"url": "https://www.jesuisundev.com/veille-technologique-rester-a-jour-sans-devenir-tare/"
+						},
+						{
+							"name": "Feedly",
+							"type": "url",
+							"url": "https://feedly.com"
+						},
+						{
+							"name": "Google Alerts",
+							"type": "url",
+							"url": "https://www.google.fr/alerts"
+						},
+						{
+							"name": "L'importance de la veille technologique",
+							"type": "url",
+							"url": "https://www.luc-sanchez.fr/2016/05/limportance-de-veille-technologique/#.W50aPEUzZ-V"
+						},
+						{
+							"name": "Presse-citron",
+							"type": "url",
+							"url": "https://www.presse-citron.net"
+						},
+						{
+							"name": "Korben",
+							"type": "url",
+							"url": "https://korben.info"
+						},
+						{
+							"name": "Journal du Geek",
+							"type": "url",
+							"url": "https://www.journaldugeek.com"
+						},
+						{
+							"name": "Planet Libre",
+							"type": "url",
+							"url": "http://www.planet-libre.org"
+						},
+						{
+							"name": "L'importance de la veille technologique",
+							"type": "url",
+							"url": "https://www.luc-sanchez.fr/2016/05/limportance-de-veille-technologique/#.W50aPEUzZ-V"
+						},
+						{
+							"name": "Medium",
+							"type": "url",
+							"url": "https://medium.com"
+						},
+						{
+							"name": "Presse-Citron",
+							"type": "url",
+							"url": "https://www.presse-citron.net"
+						},
+						{
+							"name": "Korben",
+							"type": "url",
+							"url": "https://korben.info"
+						},
+						{
+							"name": "JournalduGeek",
+							"type": "url",
+							"url": "https://www.journaldugeek.com"
+						},
+						{
+							"name": "Developpez",
+							"type": "url",
+							"url": "https://www.developpez.com"
+						},
+						{
+							"name": "Dev.to",
+							"type": "url",
+							"url": "https://dev.to"
+						},
+						{
+							"name": "FreeCodeCamp News",
+							"type": "url",
+							"url": "https://www.freecodecamp.org/news/"
+						},
+						{
+							"name": "DZone",
+							"type": "url",
+							"url": "https://dzone.com"
+						},
+						{
+							"name": "Smashing Magazine",
+							"type": "url",
+							"url": "https://www.smashingmagazine.com"
+						},
+						{
+							"name": "Planet Libre",
+							"type": "url",
+							"url": "http://www.planet-libre.org"
+						},
+						{
+							"name": "Alsacreations",
+							"type": "url",
+							"url": "https://www.alsacreations.com"
+						},
+						{
+							"name": "Stack Overflow",
+							"type": "url",
+							"url": "https://stackoverflow.com"
 						}
 					]
 				},
@@ -1061,6 +1255,17 @@
 							"type": "url",
 							"url": "https://www.editions-eni.fr"
 						},
+						{
+							"name": "French Future Academy",
+							"type": "url",
+							"url": "https://frenchfutureacademy.com"
+						},
+						{
+							"name": "La méthode des 5 pourquoi",
+							"type": "url",
+							"url": "https://qualiblog.fr/outils-et-methodes/la-methode-des-5-pourquoi-pour-eradiquer-vos-problemes/"
+						},
+
 						{
 							"name": "Coding Practice",
 							"children": [
