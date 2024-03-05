@@ -14,6 +14,7 @@
 
 ## 1.1.0
 
+- commit, version v1.1.0 0890516ff595c7d4ebd5ed0a58045a97ab261638
 - Fix bug.
 - Add content in json.
 
