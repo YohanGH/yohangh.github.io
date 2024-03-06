@@ -21,16 +21,33 @@
 		/>
 		<title>DEV Full Stack Framework</title>
 		<script src="scripts/d3.v3.min.js" defer></script>
+		<script src="scripts/arf.js" defer></script>
+		<script src="scripts/color-scheme.js" defer></script>
 	</head>
 
 	<body>
 		<header>
 			<h1 id="header">DEV Full Stack Framework</h1>
+			<div class="theme-switch-wrapper">
+				<label for="theme-switch" class="theme-switch-label">
+					<span>Light</span>
+					<div class="theme-switch">
+						<input
+							id="theme-switch"
+							class="theme-switch-input"
+							type="checkbox"
+							role="switch"
+							name="theme"
+						/>
+						<span class="theme-slider"></span>
+					</div>
+					<span>Dark</span>
+				</label>
+			</div>
 		</header>
 		<main>
 			<section id="tree-container">
 				<!-- Insertion of section-specific scripts can be better managed -->
-				<script src="scripts/arf.js" defer></script>
 			</section>
 
 			<section aria-labelledby="notes">

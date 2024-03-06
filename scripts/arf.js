@@ -56,7 +56,9 @@ function update(source) {
 	const nodes = tree.nodes(root).reverse(),
 		links = tree.links(nodes);
 
-	nodes.forEach((d) => (d.y = d.depth * 180));
+	nodes.forEach((d) => (d.y =
+
+d.depth * 180));
 
 	// Update the nœuds
 	const node = svg
