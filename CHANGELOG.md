@@ -11,10 +11,25 @@
 #                                                                              #
 # **************************************************************************** #
 ```
+## 1.4.0
+
+- commit version v1.4.0 {commit : ce6d4b4}
+- Add content in json
+
+## 1.3.0
+
+- commit version v1.3.0 {commit : ce6d4b4}
+- Add content in json
+- Add theme dark and white
+
+## 1.2.0
+
+- Commit version v1.2.0 {commit : 44764b7}
+- Add content in json
 
 ## 1.1.0
 
-- commit, version v1.1.0 0890516ff595c7d4ebd5ed0a58045a97ab261638
+- commit, version v1.1.0 {commit : 0890516}
 - Fix bug.
 - Add content in json.
 

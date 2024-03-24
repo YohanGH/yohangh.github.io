@@ -111,7 +111,10 @@
 											"name": "Inkscape",
 											"type": "url",
 											"url": "https://inkscape.org"
-										}
+										},
+											"name": "Garden Bradwoods",
+											"type": "url",
+											"url": "https://garden.bradwoods.io"
 									]
 								}
 							]
@@ -302,6 +305,11 @@
 							"url": "https://vuejs.org/"
 						},
 						{
+							"name": "Pythontutor",
+							"type": "url",
+							"url": "https://pythontutor.com"
+						},
+						{
 							"name": "React",
 							"children": [
 								{
@@ -313,6 +321,26 @@
 									"name": "React Status Code",
 									"type": "url",
 									"url": "https://react.statuscode.com"
+								},
+								{
+									"name": "React TypeScript Cheatsheet",
+									"type": "url",
+									"url": "https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/"
+								},
+								{
+									"name": "TypeScript and React",
+									"type": "url",
+									"url": "https://www.typescriptlang.org/docs/handbook/react.html"
+								},
+								{
+									"name": "Robin Wieruch Blog",
+									"type": "url",
+									"url": "https://www.robinwieruch.de/blog/"
+								},
+								{
+									"name": "Overreacted",
+									"type": "url",
+									"url": "https://overreacted.io"
 								}
 							]
 						},
@@ -380,7 +408,10 @@
 							"name": "JavaScript.info Arrays",
 							"type": "url",
 							"url": "https://javascript.info/array"
-						}
+						},
+							"name": "JavaScript async function and array map",
+							"type": "url",
+							"url": "https://advancedweb.hu/how-to-use-async-functions-with-array-map-in-javascript/"
 					]
 				},
 				{
@@ -415,6 +446,66 @@
 							"name": "npm",
 							"type": "url",
 							"url": "https://www.npmjs.com/"
+						},
+						{
+							"name": "You Might Not Need",
+							"type": "url",
+							"url": "https://youmightnotneed.com"
+						},
+						{
+							"name": "npm Search: PDF Generation",
+							"type": "url",
+							"url": "https://www.npmjs.com/search?q=pdf%20generation"
+						},
+						{
+							"name": "Legally Package",
+							"type": "url",
+							"url": "https://www.npmjs.com/package/legally"
+						},
+						{
+							"name": "About Semantic Versioning",
+							"type": "url",
+							"url": "https://docs.npmjs.com/about-semantic-versioning"
+						},
+						{
+							"name": "npm-run-all Package",
+							"type": "url",
+							"url": "https://www.npmjs.com/package/npm-run-all"
+						},
+						{
+							"name": "Package Locks",
+							"type": "url",
+							"url": "https://docs.npmjs.com/cli/v6/configuring-npm/package-locks"
+						},
+						{
+							"name": "Auditing Package Dependencies",
+							"type": "url",
+							"url": "https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities"
+						},
+						{
+							"name": "npm Update Command",
+							"type": "url",
+							"url": "https://docs.npmjs.com/cli/v7/commands/npm-update"
+						},
+						{
+							"name": "Patch-package",
+							"type": "url",
+							"url": "https://www.npmjs.com/package/patch-package"
+						},
+						{
+							"name": "ESLint Rules",
+							"type": "url",
+							"url": "https://eslint.org/docs/latest/rules/"
+						},
+						{
+							"name": "Prettier Configuration",
+							"type": "url",
+							"url": "https://prettier.io/docs/en/configuration.html"
+						},
+						{
+							"name": "Airbnb JavaScript Style Guide",
+							"type": "url",
+							"url": "https://github.com/airbnb/javascript"
 						},
 						{
 							"name": "Yarn",
