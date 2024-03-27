@@ -112,9 +112,11 @@
 											"type": "url",
 											"url": "https://inkscape.org"
 										},
+										{
 											"name": "Garden Bradwoods",
 											"type": "url",
 											"url": "https://garden.bradwoods.io"
+										}
 									]
 								}
 							]
@@ -409,9 +411,11 @@
 							"type": "url",
 							"url": "https://javascript.info/array"
 						},
+						{
 							"name": "JavaScript async function and array map",
 							"type": "url",
 							"url": "https://advancedweb.hu/how-to-use-async-functions-with-array-map-in-javascript/"
+						}
 					]
 				},
 				{
