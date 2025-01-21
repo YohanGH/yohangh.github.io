@@ -1,3 +1,61 @@
+{
+      "name": "Rust",
+      "children": [
+        {
+          "name": "Rust Language Official Installation",
+          "type": "url",
+          "url": "https://www.rust-lang.org/fr/tools/install"
+        },
+        {
+          "name": "The Rust Programming Language",
+          "type": "url",
+          "url": "https://doc.rust-lang.org/stable/book/"
+        },
+        {
+          "name": "Jeremy Chone's YouTube Channel",
+          "type": "url",
+          "url": "https://www.youtube.com/@JeremyChone"
+        },
+        {
+          "name": "This Week in Rust",
+          "type": "url",
+          "url": "https://this-week-in-rust.org"
+        },
+        {
+          "name": "Anki Deck for Rust",
+          "type": "url",
+          "url": "https://ankiweb.net/shared/info/1541471942"
+        },
+        {
+          "name": "Comprehensive Rust by Google",
+          "type": "url",
+          "url": "https://google.github.io/comprehensive-rust/"
+        },
+        {
+          "name": "Laforge",
+          "type": "url",
+          "url": "https://lafor.ge"
+        }
+      ]
+-----------------------\
+
+{
+      "name": "Front-End",
+      "children": [
+        {
+          "name": "Design Juice",
+          "type": "url",
+          "url": "https://garden.bradwoods.io/notes/design/juice#soul"
+        },
+        {
+          "name": "Async Functions with Array.map",
+          "type": "url",
+          "url": "https://advancedweb.hu/how-to-use-async-functions-with-array-map-in-javascript/"
+        }
+      ]
+    },
+
+-----------------------\
     {
        {
       "name": "Development Resources",
