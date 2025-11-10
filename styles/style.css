@@ -63,14 +63,31 @@
 	--height-standard: 26px;
 	--height-large: 34px;
 
+	/* Spacing variables (for header compatibility) */
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 1.5rem;
+	--spacing-lg: 2rem;
+	--spacing-xl: 3rem;
+	--spacing-2xl: 4rem;
+
+	/* Gradient variables (for header compatibility) */
+	--gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	--gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+
 	/* Transitions */
 	--transition-speed: 0.3s;
+	--transition-fast: 0.2s ease;
+	--transition-normal: 0.3s ease;
+	--transition-slow: 0.5s ease;
 	--animation-duration: 0.6s;
 
 	/* Shadows */
 	--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+	--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
 	--shadow-glow: 0 0 20px rgba(99, 102, 241, 0.4);
 }
 
@@ -92,43 +109,42 @@ body {
 /* Header Styles - Support for unified landing-header */
 header,
 .landing-header {
-	background: rgba(15, 23, 42, 0.95);
+	background: rgba(15, 23, 42, 0.8);
 	backdrop-filter: blur(10px);
 	border-bottom: 1px solid var(--border-color);
-	padding: 1rem 0;
+	padding: var(--spacing-sm) 0;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
-	transition: all var(--transition-speed);
+	transition: all var(--transition-normal);
 }
 
 header nav,
 .landing-header nav {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 var(--padding-standard);
+	padding: 0 var(--spacing-md);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 1rem;
 }
 
 header nav > div,
 .landing-header nav > div {
 	display: flex;
 	align-items: center;
-	gap: var(--spacing-lg, 2rem);
+	gap: var(--spacing-lg);
 }
 
 .logo {
 	font-size: 1.5rem;
 	font-weight: 700;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: var(--gradient-1);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-decoration: none;
-	transition: transform var(--transition-speed);
+	transition: transform var(--transition-fast);
 }
 
 .logo:hover {
@@ -137,7 +153,7 @@ header nav > div,
 
 .nav-links {
 	display: flex;
-	gap: var(--spacing-lg, 2rem);
+	gap: var(--spacing-lg);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -147,7 +163,7 @@ header nav > div,
 	color: var(--text-secondary);
 	text-decoration: none;
 	font-weight: 500;
-	transition: color var(--transition-speed);
+	transition: color var(--transition-fast);
 	position: relative;
 }
 
@@ -159,7 +175,7 @@ header nav > div,
 	width: 0;
 	height: 2px;
 	background: var(--primary-color);
-	transition: width var(--transition-speed);
+	transition: width var(--transition-normal);
 }
 
 .nav-links a:hover {
