@@ -1,113 +1,178 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
-			content="This framework is focused on providing free resources and
-					tools for Full Stack developers. The goal is to assist
-					professionals and enthusiasts in finding useful resources
-					for the development, operationalization, and maintenance of
-					complete IT solutions without any initial cost.
-					"
+			content="Hub de documentation Full Stack - Arborescence interactive de ressources, outils et documentations pour développeurs. Explorez une collection complète de technologies front-end, back-end, DevOps et plus encore."
 		/>
+		<meta name="keywords" content="Full Stack, Documentation, Arborescence, Développement Web, Ressources, Front-End, Back-End, DevOps" />
+		<meta name="author" content="Yohan Regnier" />
 
-		<link type="text/css" rel="stylesheet" href="styles/style.css" />
+		<link type="text/css" rel="stylesheet" href="styles/landing.css" />
 		<link
 			rel="shortcut icon"
 			href="assets/images/favicon.ico"
 			type="image/x-icon"
 		/>
-		<title>DEV Full Stack Framework</title>
-		<script src="scripts/d3.v3.min.js" defer></script>
-		<script src="scripts/arf.js" defer></script>
+		<title>Full Stack Documentation Hub - Arborescence Interactive</title>
 		<script src="scripts/color-scheme.js" defer></script>
 	</head>
 
 	<body>
-		<header>
-			<h1 id="header">DEV Full Stack Framework</h1>
-			<div class="theme-switch-wrapper">
-				<label for="theme-switch" class="theme-switch-label">
-					<span>Light</span>
-					<div class="theme-switch">
-						<input
-							id="theme-switch"
-							class="theme-switch-input"
-							type="checkbox"
-							role="switch"
-							name="theme"
-						/>
-						<span class="theme-slider"></span>
+		<header class="landing-header">
+			<nav>
+				<a href="index.html" class="logo">FullStack Hub</a>
+				<div style="display: flex; align-items: center; gap: var(--spacing-lg);">
+					<ul class="nav-links">
+						<li><a href="#features">Fonctionnalités</a></li>
+						<li><a href="arborescence.html">Arborescence</a></li>
+						<li><a href="https://github.com/YohanGH/yohangh.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+					</ul>
+					<div class="theme-switch-wrapper">
+						<label for="theme-switch" class="theme-switch-label">
+							<span>Clair</span>
+							<div class="theme-switch">
+								<input
+									id="theme-switch"
+									class="theme-switch-input"
+									type="checkbox"
+									role="switch"
+									name="theme"
+									aria-label="Basculer entre le mode clair et sombre"
+								/>
+								<span class="theme-slider"></span>
+							</div>
+							<span>Sombre</span>
+						</label>
 					</div>
-					<span>Dark</span>
-				</label>
-			</div>
+				</div>
+			</nav>
 		</header>
+
 		<main>
-			<section id="tree-container">
-				<!-- Insertion of section-specific scripts can be better managed -->
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Hub de Documentation Full Stack</h1>
+					<p>
+						Explorez une arborescence interactive de ressources, outils et documentations pour développeurs Full Stack. De la conception au déploiement, tout ce dont vous avez besoin en un seul endroit.
+					</p>
+					<div class="cta-buttons">
+						<a href="arborescence.html" class="btn btn-primary">
+							<span>Explorer l'Arborescence</span>
+							<span>→</span>
+						</a>
+						<a href="https://github.com/YohanGH/yohangh.github.io" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+							<span>Voir sur GitHub</span>
+						</a>
+					</div>
+				</div>
 			</section>
 
-			<section aria-labelledby="notes">
-				<h2 id="notes">Notes</h2>
-				<p>
-					This framework is focused on providing free resources and
-					tools for Full Stack developers. The goal is to assist
-					professionals and enthusiasts in finding useful resources
-					for the development, operationalization, and maintenance of
-					complete IT solutions without any initial cost.
-				</p>
+			<section id="features" class="features">
+				<h2 class="section-title">Fonctionnalités</h2>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">🌳</div>
+						<h3>Arborescence Interactive</h3>
+						<p>
+							Naviguez dans une visualisation D3.js interactive organisant hiérarchiquement des centaines de ressources pour le développement Full Stack.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">📚</div>
+						<h3>Documentation Complète</h3>
+						<p>
+							Accédez à des documentations, tutoriels et guides couvrant le front-end, back-end, DevOps, bases de données et plus encore.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🔧</div>
+						<h3>Outils Gratuits</h3>
+						<p>
+							Découvrez une sélection d'outils et frameworks open-source pour le développement, les tests, le déploiement et la maintenance.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🎯</div>
+						<h3>Organisé par Catégories</h3>
+						<p>
+							Ressources classées par domaines : Front-End, Back-End, Soft Skills, Outils & Analyse, et Réglementations.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🚀</div>
+						<h3>Mise à Jour Continue</h3>
+						<p>
+							Contenu régulièrement actualisé avec les dernières technologies et meilleures pratiques du développement Full Stack.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🌐</div>
+						<h3>Open Source</h3>
+						<p>
+							Projet sous licence GPL-3.0. Contribuez en proposant de nouvelles ressources via GitHub.
+						</p>
+					</div>
+				</div>
 			</section>
-			<section aria-labelledby="updates">
-				<h2 id="updates">For Update Notifications</h2>
-				<p>
-					Follow me on LinkedIn:
-					<a
-						href="https://www.linkedin.com/in/yohan-regnier-5a2505254"
-						aria-label="Connect with Yohan Regnier on LinkedIn"
-						rel="noopener"
-						target="_blank"
-						>@Yohan Regnier</a
-					>
+
+			<section class="features" style="text-align: center;">
+				<h2 class="section-title">Prêt à Explorer ?</h2>
+				<p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--spacing-xl) auto; font-size: 1.1rem;">
+					Plongez dans l'arborescence interactive et découvrez des centaines de ressources organisées pour faciliter votre parcours de développement Full Stack.
 				</p>
-				<p>
-					Watch or star the project on Github:
-					<a
-						href="https://github.com/YohanGH/yohangh.github.io"
-						rel="noopener noreferrer"
-						target="_blank"
-						>https://github.com/YohanGH/yohangh.github.io</a
-					>
-				</p>
-			</section>
-			<section aria-labelledby="feedback">
-				<h2 id="feedback">Suggestions, Comments, Feedback</h2>
-				<p>
-					Feedback or new tool suggestions are extremely welcome!
-					Please feel free to reach out on Twitter or submit an issue
-					on Github.
-				</p>
-			</section>
-			<section aria-labelledby="licence">
-				<h2 id="licence"></h2>
-				<p>
-					This project is licensed under GPL-3.0. For more details,
-					see the
-					<a
-						href="https://github.com/YohanGH/yohangh.github.io/blob/main/LICENCE.GPL"
-						rel="noopener noreferrer"
-						target="_blank"
-						>LICENSE</a
-					>
-					file in this repository.
-				</p>
+				<a href="arborescence.html" class="btn btn-primary" style="font-size: 1.2rem;">
+					<span>Découvrir l'Arborescence</span>
+					<span>→</span>
+				</a>
 			</section>
 		</main>
-		<footer>
-			<hr />
-			<p>Licence GPL-3.0 - Yohan Regnier 2024.</p>
+
+		<footer class="landing-footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h4>À Propos</h4>
+					<p>
+						Hub de documentation Full Stack dédié à compiler des ressources gratuites et des outils pour développeurs professionnels et passionnés.
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<h4>Liens Rapides</h4>
+					<a href="arborescence.html">Arborescence Interactive</a>
+					<a href="https://github.com/YohanGH/yohangh.github.io" target="_blank" rel="noopener noreferrer">Dépôt GitHub</a>
+					<a href="https://github.com/YohanGH/yohangh.github.io/blob/main/LICENCE.GPL" target="_blank" rel="noopener noreferrer">Licence GPL-3.0</a>
+					<a href="SECURITY.md">Politique de Sécurité</a>
+				</div>
+
+				<div class="footer-section">
+					<h4>Contact & Réseaux</h4>
+					<a href="https://www.linkedin.com/in/yohan-regnier-5a2505254" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+					<a href="https://github.com/YohanGH" target="_blank" rel="noopener noreferrer">GitHub</a>
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/yohan-regnier-5a2505254" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+							<span>in</span>
+						</a>
+						<a href="https://github.com/YohanGH" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+							<span>gh</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2024-2025 Yohan Regnier. Licence GPL-3.0.</p>
+				<p style="margin-top: var(--spacing-xs); font-size: 0.9rem;">
+					Construit avec passion pour la communauté des développeurs Full Stack.
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>
