@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
 			content="Arborescence interactive de ressources et outils gratuits pour développeurs Full Stack. Explorez des ressources pour le développement, l'opérationnalisation et la maintenance de solutions informatiques complètes."
 		/>
+		<meta name="keywords" content="Full Stack, Arborescence, Visualisation, D3.js, Ressources, Développement, Documentation" />
+		<meta name="author" content="Yohan Regnier" />
 
 		<link type="text/css" rel="stylesheet" href="styles/style.css" />
 		<link
@@ -14,92 +16,184 @@
 			href="assets/images/favicon.ico"
 			type="image/x-icon"
 		/>
-		<title>Arborescence - Full Stack Documentation Hub</title>
+		<title>Arborescence Interactive - Full Stack Documentation Hub</title>
 		<script src="scripts/d3.v3.min.js" defer></script>
 		<script src="scripts/arf.js" defer></script>
 		<script src="scripts/color-scheme.js" defer></script>
 	</head>
 
 	<body>
-		<header>
-			<nav style="text-align: center; padding: 10px;">
-				<a href="index.html" style="color: var(--text-color-purple-neon); text-decoration: none; margin-right: 20px;">← Accueil</a>
-			</nav>
-			<h1 id="header">Arborescence Full Stack</h1>
-			<div class="theme-switch-wrapper">
-				<label for="theme-switch" class="theme-switch-label">
-					<span>Light</span>
-					<div class="theme-switch">
-						<input
-							id="theme-switch"
-							class="theme-switch-input"
-							type="checkbox"
-							role="switch"
-							name="theme"
-						/>
-						<span class="theme-slider"></span>
+		<header class="landing-header">
+			<nav>
+				<a href="index.html" class="logo">FullStack Hub</a>
+				<div style="display: flex; align-items: center; gap: var(--spacing-lg);">
+					<ul class="nav-links">
+						<li><a href="index.html#features">Fonctionnalités</a></li>
+						<li><a href="arborescence.html">Arborescence</a></li>
+						<li><a href="https://github.com/YohanGH/yohangh.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+					</ul>
+					<div class="theme-switch-wrapper">
+						<label for="theme-switch" class="theme-switch-label">
+							<span>Clair</span>
+							<div class="theme-switch">
+								<input
+									id="theme-switch"
+									class="theme-switch-input"
+									type="checkbox"
+									role="switch"
+									name="theme"
+									aria-label="Basculer entre le mode clair et sombre"
+								/>
+								<span class="theme-slider"></span>
+							</div>
+							<span>Sombre</span>
+						</label>
 					</div>
-					<span>Dark</span>
-				</label>
-			</div>
+				</div>
+			</nav>
 		</header>
+
 		<main>
-			<section id="tree-container">
-				<!-- Insertion of section-specific scripts can be better managed -->
+			<section id="tree-container" aria-label="Visualisation de l'arborescence des ressources Full Stack">
+				<!-- La visualisation D3.js sera insérée ici par le script arf.js -->
 			</section>
 
-			<section aria-labelledby="notes">
-				<h2 id="notes">Notes</h2>
+			<section aria-labelledby="about">
+				<h2 id="about">À propos de cette arborescence</h2>
 				<p>
-					Cette arborescence interactive compile des ressources et outils gratuits pour développeurs Full Stack. L'objectif est d'aider les professionnels et les passionnés à trouver des ressources utiles pour le développement, l'opérationnalisation et la maintenance de solutions informatiques complètes sans coût initial.
+					Cette visualisation interactive présente une collection organisée de ressources et d'outils gratuits pour le développement Full Stack. 
+					Cliquez sur les nœuds de l'arbre pour explorer différentes catégories et découvrir des centaines de ressources couvrant :
 				</p>
+				<ul style="color: var(--text-secondary); margin-left: 2rem; line-height: 2;">
+					<li><strong>Front-End</strong> : Frameworks, bibliothèques, outils de design et de développement web</li>
+					<li><strong>Back-End</strong> : Langages, bases de données, APIs, architectures et patterns</li>
+					<li><strong>DevOps</strong> : Conteneurisation, CI/CD, serveurs web et monitoring</li>
+					<li><strong>Soft Skills</strong> : Communication, gestion de projet et compétences interpersonnelles</li>
+					<li><strong>Outils & Analyse</strong> : Veille technologique, outils de productivité et ressources d'apprentissage</li>
+				</ul>
 			</section>
-			<section aria-labelledby="updates">
-				<h2 id="updates">Notifications de mise à jour</h2>
+
+			<section aria-labelledby="navigation-tips">
+				<h2 id="navigation-tips">💡 Conseils de navigation</h2>
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+					<div>
+						<h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 0.5rem;">🖱️ Interaction</h3>
+						<p style="color: var(--text-secondary); font-size: 0.95rem;">
+							Cliquez sur les nœuds pour développer ou réduire les branches de l'arborescence.
+						</p>
+					</div>
+					<div>
+						<h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 0.5rem;">🔗 Liens</h3>
+						<p style="color: var(--text-secondary); font-size: 0.95rem;">
+							Les nœuds avec une icône de lien ouvrent directement la ressource externe.
+						</p>
+					</div>
+					<div>
+						<h3 style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 0.5rem;">🎨 Thème</h3>
+						<p style="color: var(--text-secondary); font-size: 0.95rem;">
+							Basculez entre les modes clair et sombre selon votre préférence.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section aria-labelledby="contribute">
+				<h2 id="contribute">🤝 Contribuer</h2>
 				<p>
-					Suivez-moi sur LinkedIn:
-					<a
-						href="https://www.linkedin.com/in/yohan-regnier-5a2505254"
-						aria-label="Connect with Yohan Regnier on LinkedIn"
-						rel="noopener"
-						target="_blank"
-						>@Yohan Regnier</a
-					>
+					Cette arborescence est un projet <strong>open source</strong> en constante évolution. Si vous connaissez des ressources précieuses qui devraient être ajoutées, votre contribution est la bienvenue !
 				</p>
-				<p>
-					Suivez le projet sur Github:
-					<a
-						href="https://github.com/YohanGH/yohangh.github.io"
+				<div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+					<a 
+						href="https://github.com/YohanGH/yohangh.github.io" 
+						target="_blank" 
 						rel="noopener noreferrer"
-						target="_blank"
-						>https://github.com/YohanGH/yohangh.github.io</a
+						style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--primary-color); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;"
+						onmouseover="this.style.background='var(--primary-hover)'; this.style.transform='translateY(-2px)'"
+						onmouseout="this.style.background='var(--primary-color)'; this.style.transform='translateY(0)'"
 					>
-				</p>
+						<span>Voir sur GitHub</span>
+						<span>→</span>
+					</a>
+					<a 
+						href="https://github.com/YohanGH/yohangh.github.io/issues" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;"
+						onmouseover="this.style.background='var(--card-bg)'; this.style.transform='translateY(-2px)'"
+						onmouseout="this.style.background='transparent'; this.style.transform='translateY(0)'"
+					>
+						<span>Proposer une ressource</span>
+					</a>
+				</div>
 			</section>
+
+			<section aria-labelledby="updates">
+				<h2 id="updates">📢 Suivre les mises à jour</h2>
+				<p>
+					Restez informé des nouvelles ressources ajoutées et des améliorations apportées au projet :
+				</p>
+				<div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+					<div>
+						<strong style="color: var(--primary-color);">LinkedIn :</strong>
+						<a
+							href="https://www.linkedin.com/in/yohan-regnier-5a2505254"
+							aria-label="Suivre Yohan Regnier sur LinkedIn"
+							rel="noopener"
+							target="_blank"
+							style="margin-left: 0.5rem;"
+						>@Yohan Regnier</a>
+					</div>
+					<div>
+						<strong style="color: var(--primary-color);">GitHub :</strong>
+						<a
+							href="https://github.com/YohanGH/yohangh.github.io"
+							rel="noopener noreferrer"
+							target="_blank"
+							style="margin-left: 0.5rem;"
+						>Star le projet ⭐</a>
+					</div>
+				</div>
+			</section>
+
 			<section aria-labelledby="feedback">
-				<h2 id="feedback">Suggestions, Commentaires, Feedback</h2>
+				<h2 id="feedback">💬 Retours & Suggestions</h2>
 				<p>
-					Vos retours et suggestions de nouveaux outils sont les bienvenus ! N'hésitez pas à ouvrir une issue sur Github ou à me contacter sur LinkedIn.
+					Vos commentaires sont précieux pour améliorer cette ressource. N'hésitez pas à :
 				</p>
+				<ul style="color: var(--text-secondary); margin-left: 2rem; margin-top: 1rem; line-height: 2;">
+					<li>Ouvrir une <a href="https://github.com/YohanGH/yohangh.github.io/issues" target="_blank" rel="noopener noreferrer"><strong>issue sur GitHub</strong></a> pour signaler un problème ou suggérer une amélioration</li>
+					<li>Me contacter sur <a href="https://www.linkedin.com/in/yohan-regnier-5a2505254" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong></a> pour des discussions plus approfondies</li>
+					<li>Soumettre une <strong>Pull Request</strong> avec vos contributions</li>
+				</ul>
 			</section>
+
 			<section aria-labelledby="licence">
-				<h2 id="licence">Licence</h2>
+				<h2 id="licence">📜 Licence</h2>
 				<p>
-					Ce projet est sous licence GPL-3.0. Pour plus de détails, consultez le fichier
+					Ce projet est distribué sous licence <strong>GPL-3.0</strong>. Vous êtes libre de l'utiliser, le modifier et le redistribuer selon les termes de cette licence.
+				</p>
+				<p style="margin-top: 0.5rem;">
+					Pour plus de détails, consultez le fichier
 					<a
 						href="https://github.com/YohanGH/yohangh.github.io/blob/main/LICENCE.GPL"
 						rel="noopener noreferrer"
 						target="_blank"
-						>LICENSE</a
-					>
-					dans ce dépôt.
+					>LICENSE</a>
+					dans le dépôt GitHub.
 				</p>
 			</section>
 		</main>
+
 		<footer>
-			<hr />
-			<p>Licence GPL-3.0 - Yohan Regnier 2024-2025.</p>
+			<p style="font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem;">
+				Full Stack Documentation Hub
+			</p>
+			<p>
+				&copy; 2024-2025 <a href="https://github.com/YohanGH" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Yohan Regnier</a> - Licence GPL-3.0
+			</p>
+			<p style="margin-top: 0.75rem; font-size: 0.85rem;">
+				Construit avec <span style="color: var(--accent-color);">♥</span> pour la communauté des développeurs
+			</p>
 		</footer>
 	</body>
 </html>
-

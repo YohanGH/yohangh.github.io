@@ -17,17 +17,37 @@
 			type="image/x-icon"
 		/>
 		<title>Full Stack Documentation Hub - Arborescence Interactive</title>
+		<script src="scripts/color-scheme.js" defer></script>
 	</head>
 
 	<body>
 		<header class="landing-header">
 			<nav>
 				<a href="index.html" class="logo">FullStack Hub</a>
-				<ul class="nav-links">
-					<li><a href="#features">Fonctionnalités</a></li>
-					<li><a href="arborescence.html">Arborescence</a></li>
-					<li><a href="https://github.com/YohanGH/yohangh.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-				</ul>
+				<div style="display: flex; align-items: center; gap: var(--spacing-lg);">
+					<ul class="nav-links">
+						<li><a href="#features">Fonctionnalités</a></li>
+						<li><a href="arborescence.html">Arborescence</a></li>
+						<li><a href="https://github.com/YohanGH/yohangh.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+					</ul>
+					<div class="theme-switch-wrapper">
+						<label for="theme-switch" class="theme-switch-label">
+							<span>Clair</span>
+							<div class="theme-switch">
+								<input
+									id="theme-switch"
+									class="theme-switch-input"
+									type="checkbox"
+									role="switch"
+									name="theme"
+									aria-label="Basculer entre le mode clair et sombre"
+								/>
+								<span class="theme-slider"></span>
+							</div>
+							<span>Sombre</span>
+						</label>
+					</div>
+				</div>
 			</nav>
 		</header>
 

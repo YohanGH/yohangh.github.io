@@ -12,6 +12,47 @@
 # **************************************************************************** #
 ```
 
+## 2.1.0 - 2025-11-10
+
+### 🎨 Tree Visualization Modernization
+
+**Enhanced:**
+- 🌳 Completely redesigned tree visualization page (`arborescence.html`)
+- 🎨 Modern CSS overhaul for `styles/style.css` with new color palette
+- 🌓 Improved light/dark mode toggle with modern switch design
+- 📱 Better responsive design for mobile and tablet devices
+- ♿ Enhanced accessibility with proper ARIA labels
+- 🎯 Cleaner, more intuitive navigation and information architecture
+
+**Visual Improvements:**
+- Modern gradient-based color scheme aligned with landing page
+- Smoother animations and transitions for tree interactions
+- Better contrast and readability in both light and dark modes
+- Enhanced node and link styling with hover effects
+- Improved legend design with backdrop blur effect
+- Sticky header with better navigation UX
+
+**Content Additions:**
+- New "About" section explaining the tree structure
+- Navigation tips section for better user guidance
+- Contribution call-to-action with styled buttons
+- Enhanced footer with social links
+- Better structured information sections
+
+**Technical Improvements:**
+- CSS custom properties for consistent theming
+- Modern design tokens and spacing system
+- Better semantic HTML structure
+- Improved focus states for keyboard navigation
+- Print-friendly styles
+- Accessibility improvements (reduced motion support)
+
+**Files Modified:**
+- `arborescence.html` - Complete redesign with better content structure
+- `styles/style.css` - Complete CSS overhaul with modern design system
+
+---
+
 ## 2.0.0 - 2025-11-10
 
 ### 🎉 Major Redesign
